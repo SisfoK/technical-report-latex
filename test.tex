@@ -17,10 +17,8 @@ breaklines=true
 \begin{document}
 \title{Laporan Tugas UTS Deeplearning, Tutorial 5 : Inception, ResNet and DenseNet}
 
-\author{Lopinta Sarungallo\\
-Irene Maritsa\\
-Stella Alithea}
-\date{25/4/15}
+\author{Deo Valiandro. M}
+\date{}
 
 \maketitle
 \tableofcontents
@@ -29,25 +27,23 @@ Stella Alithea}
 
 \IEEEpeerreviewmaketitle
 \begin{abstract}
-Ada banyak arsitektur yang berbeda telah diusulkan selama beberapa tahun terakhir pada arsitektuk CNN. Beberapa yang paling berdampak, dan masih relevan hingga saat ini, adalah sebagai berikut: arsitektur GoogleNet/Inception (pemenang ILSVRC 2014), ResNet (pemenang ILSVRC 2015), dan DenseNet (pemenang makalah terbaik CVPR 2017). Semuanya adalah model terbaik saat diusulkan, dan ide inti dari jaringan ini adalah fondasi untuk sebagian besar arsitektur terbaik saat ini. Oleh karena itu, penting untuk memahami arsitektur ini secara detail dan mempelajari cara mengimplementasikannya.
+Ada banyak arsitektur yang berbeda telah diusulkan selama beberapa tahun terakhir pada arsitektuk CNN.
 \end{abstract}
 
 
 \section{Latar Belakang}
-Laporan teknikal ini merupakan tugas wajib yang dikerjakan sebagai bagian dari ujian tengah semester (UTS) mata kuliah Deeplearning di prodi Ilmu Komputer Fakultas MIPA Universitas Hasanuddin.
+Laporan teknikal ini merupakan tugas wajib yang dikerjakan untuk mendapatkan nilai bagus mata kuliah Deeplearning di prodi Ilmu Komputer Fakultas MIPA Universitas Hasanuddin.
 
 \section{Convolutional Neural Network (CNN)}
-CNN adalah salah satu bidang deep learning yang digunakan terutama untuk pemrosesan gambar. CNN telah mengalami kemajuan yang hebat dalam satu dekade terakhir. Kursus ini mengajarkan CNN mulai dari yang paling mendasar sampai pemrograman CNN yang mutakhir seperti pengenalan mobil pada self-driving car, pengenalan wajah, dan sebagainya.
-
-Sesuai dengan namanya, CNN memanfaatkan proses konvolusi. Dengan menggerakan sebuah kernel konvolusi (filter) berukuran tertentu ke sebuah gambar, komputer mendapatkan informasi representatif baru dari hasil perkalian bagian gambar tersebut dengan filter yang digunakan.
+CNN adalah ...
 
 
-% \begin{figure}[!h]
-% \centering
-% \includegraphics[width=0.8\columnwidth]{trilece}
-% \caption{Simulation Results}
-% \label{fig_sim}
-% \end{figure}
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.8\columnwidth]{trilece}
+\caption{Simulation Results}
+\label{fig_sim}
+\end{figure}
 
 \section{Proposed Solutions}
 This may be a modified version of your proposal depending on previously carried out research or any feedback received.
@@ -63,7 +59,7 @@ Use the subsubsection command with caution---you probably won't need it at, but 
 \section{Criteria for Assessing Solutions} \label{sec:criteria}
 This may be a modified version of your proposal depending on previously carried out research or any feedback received.
 
-\section{Research Methodology}
+\section{Coding}
 \begin{lstlisting}
     import urllib.request
 from urllib.error import HTTPError
@@ -103,13 +99,7 @@ So it may be worth commenting on your research methodology in light of the above
 In this section, only describe how you collected data, and explain what you did to test your criteria.  \emph{Do not include your findings in this section.}
 
 \section{Analysis and Interpretation}
- In this section you will mainly analyze your data in terms of your assessment criteria; e.g., do the data suggest that a particular solution is ``cost effective'' ``environmentally acceptable'', ``technically feasible'' or ``affordable''?
-
-Be logical and selective when analyzing/interpreting your research data.  For example, if a proposed solution is proven to be far too expensive to realistically implement in your context, is there any value in discussing whether it is ``culturally viable'' or ``technically sustainable''? Perhaps in this case you can focus more attention on solutions that your research suggests are more valid.  Do not just throw huge quantities of raw data at your reader and leave them to interpret it. Present enough to transparently support any conclusions you draw and make sure that you offer justifications for your analysis.
-
-Be honest and reflective while discussing your data. Your data might be too limited or unclear to interpret with accuracy---explain this, perhaps suggesting how this shortcoming could be addressed. Admitting the above will help you draw more honest and worthwhile conclusions.
-
-Remember that research is an imperfect and ongoing process that should be open to question and verification. Therefore, unless convinced by the absolute strength of your evidence, you should be tentative in your language choice when interpreting/analyzing research results. Selectively use {\em hedging} (language which indicates a lack of certainty) to modify the tone of your analysis and any conclusions that result from this.
+Lorem
 
 Here are some examples that show differing degrees of certainty:
 \begin{itemize}
@@ -124,14 +114,12 @@ Here are some examples that show differing degrees of certainty:
 
 Finally, don’t introduce any new content (e.g., research methods or solutions) within this section---this will prove confusing for the reader. The reader should clearly understand that you are, based on specific criteria, interpreting the results of your research in order to test the viability of various solutions to remedy a particular problem. The sole function of this part of the report is to openly discuss your research findings in order to set up your conclusions/recommendations.
 
-
-% Example of a table from http://www.latextemplates.com/template/professional-table
-\begin{table} % Add the following just after the closing bracket on this line to specify a position for the table on the page: [h], [t], [b] or [p] - these mean: here, top, bottom and on a separate page, respectively
-\centering % Centers the table on the page, comment out to left-justify
-\begin{tabular}{l c c c c c} % The final bracket specifies the number of columns in the table along with left and right borders which are specified using vertical bars (|); each column can be left, right or center-justified using l, r or c. To specify a precise width, use p{width}, e.g. p{5cm}
-\toprule % Top horizontal line
-& \multicolumn{5}{c}{Growth Media} \\ % Amalgamating several columns into one cell is done using the \multicolumn command as seen on this line
-\cmidrule(l){2-6} % Horizontal line spanning less than the full width of the table - you can add (r) or (l) just before the opening curly bracket to shorten the rule on the left or right side
+\begin{table}
+\centering
+\begin{tabular}{l c c c c c}
+\toprule
+& \multicolumn{5}{c}{Growth Media} \\
+\cmidrule(l){2-6}
 Strain & 1 & 2 & 3 & 4 & 5\\ % Column names row
 \midrule % In-table horizontal line
 GDS1002 & 0.962 & 0.821 & 0.356 & 0.682 & 0.801\\ % Content row 1
@@ -151,16 +139,7 @@ Average Rate & 0.920 & 0.882 & 0.477 & 0.539 & 0.923\\ % Summary/total row
 A reference to Table \ref{tab:template}.
 
 \section{Conclusions and Recommendations}
-Conclusion shows what knowledge comes out of the report. As you draw a conclusion, you need to explain it in terms of the preceding discussion. You are expected to repeat the most important ideas you have presented, without copying. Adding a table/chart summarizing the results of your findings might be helpful for the reader to clearly see the most optimum solution(s).
-
-It is likely that you will briefly describe the comparative effectiveness and suitability of your proposed solutions. Your description will logically recycle language used in your assessing criteria (section \ref{sec:criteria}): ``Solution A proved to be the most cost effective of the alternatives'' or ``Solution B, though a viable option in other contexts, was shown to lack adaptability''.  Do not have detailed analysis or lengthy discussions in this section, as this should have been completed in section X.
-
-As for recommendations, you need to explain what actions the report calls for. These recommendations should be honest, logical and practical. You may suggest that one, a combination, all or none of your proposed solutions should be implemented in order to address your specific problem. You could also urge others to research the issue further, propose a plan of action or simply admit that the problem is either insoluble or has a low priority in its present state.
-
-The recommendations should be clearly connected to the results of the report, and they should be explicitly presented. Your audience should not have to guess at what you intend to say.
-
-
-
+It is likely that you will briefly describe the comparative effectiveness and suitability of your proposed solutions. Your description will logically recycle language used in your assessing criteria (section \ref{sec:criteria}): ``Solution A proved to be the most cost effective of the alternatives'' or ``Solution B, though a viable option in other contexts, was shown to lack adaptability''.
 
 \appendices
 \section{What Goes in the Appendices} \label{App:WhatGoes}
@@ -183,7 +162,5 @@ H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
 % Web page, no author
 \bibitem{a_laymans_explanation}``A `layman's' explanation of Ultra Narrow Band technology,'' Oct.~3, 2003. [Online]. Available: \url{http://www.vmsk.org/Layman.pdf}. [Accessed: Dec.~3, 2003].
 \end{thebibliography}
-
-% This is a hand-made bibliography. If you want to use a BibTeX file, you're on your own ;-)
 
 \end{document}
